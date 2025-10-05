@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Earth</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="world">
+        <div class="world-bg"></div>
+        <div class="world-globe">
+            <div class="world-globe-pole"></div>
+            <div class="world-globe-doms-container"></div>
+            <div class="world-globe-halo"></div>
+            <div class="globe-pin"></div>
+        </div>
+    </div>
+
+    <div id="info-panel">
+        <button id="panel-close-btn">×</button>
+        <div id="panel-content">
+            <div class="panel-column-left">
+                <img id="panel-image" src="" alt="City Image">
+                <div id="panel-gallery-thumbs"></div>
+            </div>
+
+            <div class="panel-column-middle">
+                <h2 id="panel-title">City Name</h2>
+                <p id="panel-description">Information about the city will appear here.</p>
+                <div id="panel-stats">
+                    <div><strong>Country:</strong> <span id="panel-country">N/A</span></div>
+                    <div><strong>Population:</strong> <span id="panel-population">N/A</span></div>
+                </div>
+                <div id="panel-landmarks">
+                    <h3>Key Landmarks</h3>
+                    <ul id="panel-landmarks-list"></ul>
+                </div>
+            </div>
+
+            <div class="panel-column-right">
+                <div id="panel-time-section">
+                    <div id="panel-time">--:--:-- --</div>
+                    <div id="panel-timezone">Timezone</div>
+                </div>
+                <div id="panel-weather-section">
+                    <img id="panel-weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="weather icon">
+                    <div id="panel-weather-temp">--°C</div>
+                    <div id="panel-weather-desc">Weather</div>
+                </div>
+                <div id="panel-fact">
+                    <h3>Did you know?</h3>
+                    <p id="panel-fact-text">A unique fact will be displayed here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='./js/dat.gui.min.js'></script>
+    <script src='./js/Stats.js'></script>
+    <script src='./js/PerspectiveTransform.js'></script>
+    <script src='./js/TweenMax.min.js'></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>
