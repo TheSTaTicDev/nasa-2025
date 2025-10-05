@@ -979,6 +979,27 @@ const IntroPage = () => {
           `}
         </style>
       </a>
+      <Link
+        to="/cupola"
+        aria-label="Return to introduction page"
+        className="absolute top-6 left-1/4 z-50 flex h-10 w-10 items-center justify-center rounded-full border border-cyan-300/25 bg-blue-900/20 text-cyan-200 backdrop-blur-sm transition-all hover:scale-105 hover:bg-blue-800/40"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M15 19l-7-7 7-7"
+          />
+            
+        </svg>
+      </Link>
     </div>
   );
 };
