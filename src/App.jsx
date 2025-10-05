@@ -29,7 +29,14 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<ExploreSelect />} />
+      <Route path="/" element={
+        <ExploreSelect
+          cupolaImage="https://images.unsplash.com/photo-1614314007212-0257d6e2f7d8?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          nblImage="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80"
+          ambienceSrc="https://example.com/ambience.mp3"
+        />
+      }
+      />
       <Route path="/nbl" element={<IntroPage3 />} />
       <Route path="/nbl-quiz" element={<Quiz />} />
 
